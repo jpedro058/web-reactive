@@ -16,7 +16,7 @@ RUN apt update -y && apt install -y \
   sudo \
   vim \
   zsh \
-  makefile \
+  make \
   less \
   postgresql-client \
   unzip \
