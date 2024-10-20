@@ -19,7 +19,7 @@ services:
     networks:
       - server-network
     volumes:
-      - ..:/workspace
+      - ..:/web-reactive
 
 networks:
   server-network:
