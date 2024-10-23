@@ -1,8 +1,12 @@
+DROP TABLE IF EXISTS media_users;
+DROP TABLE IF EXISTS media;
+DROP TABLE IF EXISTS users;
+
 CREATE TABLE media (
 	identifier	 BIGSERIAL,
 	title		 VARCHAR(512),
 	release_date	 DATE,
-	average_rating SMALLINT,
+	average_rating FLOAT,
 	type		 BOOL,
 	PRIMARY KEY(identifier)
 );
