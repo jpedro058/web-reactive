@@ -15,8 +15,8 @@ public class MediaController {
    @GetMapping()
    private Flux<Media> getAllMedia() {
       return Flux.just(
-         new Media("1", "The GodFather"),
-         new Media("2", "yaaaaaaaaa")
+         /* new Media(1, "The GodFather"),
+         new Media(2, "yaaaaaaaaa") */
       );
    }
 

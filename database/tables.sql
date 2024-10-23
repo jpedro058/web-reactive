@@ -2,7 +2,7 @@ CREATE TABLE media (
 	identifier	 BIGSERIAL,
 	title		 VARCHAR(512),
 	release_date	 DATE,
-	average_rating SMALLINT,
+	average_rating FLOAT(8),
 	type		 BOOL,
 	PRIMARY KEY(identifier)
 );
@@ -23,3 +23,4 @@ CREATE TABLE media_users (
 
 ALTER TABLE media_users ADD CONSTRAINT media_users_fk1 FOREIGN KEY (media_identifier) REFERENCES media(identifier);
 ALTER TABLE media_users ADD CONSTRAINT media_users_fk2 FOREIGN KEY (users_identifier) REFERENCES users(identifier);
+
