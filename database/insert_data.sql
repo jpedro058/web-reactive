@@ -7,7 +7,7 @@ VALUES
 INSERT INTO users (name, age, gender) 
 VALUES 
 ('Alice', 25, TRUE), 
-('Bob', 30, FALSE), 
+('Boby', 30, FALSE), 
 ('Charlie', 22, TRUE);
 
 INSERT INTO media_users (media_identifier, users_identifier) 
